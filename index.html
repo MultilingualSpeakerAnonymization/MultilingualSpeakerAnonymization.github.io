@@ -37,15 +37,15 @@
             background-color: #DFFFD5; /* Light green */
         }
 
-        tr.neutral {
+        tr.cv {
             background-color: #DCEBF8; /* Light blue */
         }
 
-        tr.sadness {
+        tr.neutral {
             background-color: #ECECEC; /* Light gray */
         }
 
-        tr.surprise {
+        tr.mls {
             background-color: #FFDFA5; /* Light orange */
         }
     </style>
@@ -71,9 +71,9 @@
     <h3>English</h3>
     <table>
         <tr>
-            <th>Dataset</th>
-            <th>Original</th>
-            <th>Anonymized</th>
+            <th class="neutral">Dataset</th>
+            <th class="neutral">Original</th>
+            <th class="neutral">Anonymized</th>
         </tr>
         <!-- Add more rows with data as needed -->
         <tr>
@@ -129,23 +129,23 @@
     <h3>Multilingual Datasets</h3>
     <table>
         <tr>
-            <th></th>
-            <th colspan="2" align="center">MLS</th>
-            <th colspan="2" align="center">CommonVoice</th>
+            <th class="neutral"></th>
+            <th colspan="2" align="center" class="mls">MLS</th>
+            <th colspan="2" align="center" class="cv">CommonVoice</th>
         </tr>
         <tr>
-            <th>Language</th>
-            <th>Original</th>
-            <th>Anonymized</th>
-            <th>Original</th>
-            <th>Anonymized</th>
+            <th class="neutral">Language</th>
+            <th class="mls">Original</th>
+            <th class="mls">Anonymized</th>
+            <th class="cv">Original</th>
+            <th class="cv">Anonymized</th>
         </tr>
         <!-- Add more rows with data as needed -->
         <tr>
             <td>German</td>
             <td>
               <audio controls>
-                  <source src="resources\de_mls_original.wav" type="audio/mpeg">
+                  <source src="resources\de_mls_original.flac" type="audio/mpeg">
                   Your browser does not support the audio element.
               </audio>
           </td>
@@ -172,7 +172,7 @@
             <td>French</td>
             <td>
               <audio controls>
-                  <source src="resources\fr_mls_original.wav" type="audio/mpeg">
+                  <source src="resources\fr_mls_original.flac" type="audio/mpeg">
                   Your browser does not support the audio element.
               </audio>
           </td>
@@ -199,7 +199,7 @@
             <td>Italian</td>
             <td>
               <audio controls>
-                  <source src="resources\it_mls_original.wav" type="audio/mpeg">
+                  <source src="resources\it_mls_original.flac" type="audio/mpeg">
                   Your browser does not support the audio element.
               </audio>
           </td>
@@ -226,7 +226,7 @@
             <td>Spanish</td>
             <td>
               <audio controls>
-                  <source src="resources\es_mls_original.wav" type="audio/mpeg">
+                  <source src="resources\es_mls_original.flac" type="audio/mpeg">
                   Your browser does not support the audio element.
               </audio>
           </td>
@@ -253,7 +253,7 @@
             <td>Portuguese</td>
             <td>
               <audio controls>
-                  <source src="resources\pt_mls_original.wav" type="audio/mpeg">
+                  <source src="resources\pt_mls_original.flac" type="audio/mpeg">
                   Your browser does not support the audio element.
               </audio>
           </td>
@@ -280,7 +280,7 @@
             <td>Dutch</td>
             <td>
               <audio controls>
-                  <source src="resources\nl_mls_original.wav" type="audio/mpeg">
+                  <source src="resources\nl_mls_original.flac" type="audio/mpeg">
                   Your browser does not support the audio element.
               </audio>
           </td>
