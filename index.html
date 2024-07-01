@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        p {
+            font-family: Arial, sans-serif;
+        }
 
+        h1 {
+            font-family: Arial, sans-serif;
+        }
+
+        h3 {
+            font-family: Arial, sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            font-family: Arial, sans-serif;
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Color rows based on emotions */
+        tr.anger {
+            background-color: #FFDDDD; /* Light red */
+        }
+
+        tr.joy {
+            background-color: #DFFFD5; /* Light green */
+        }
+
+        tr.neutral {
+            background-color: #DCEBF8; /* Light blue */
+        }
+
+        tr.sadness {
+            background-color: #ECECEC; /* Light gray */
+        }
+
+        tr.surprise {
+            background-color: #FFDFA5; /* Light orange */
+        }
+    </style>
+</head>
+<body>
+
+<header class="page-header" role="banner">
+    <title>Multilingual Speaker Anonymization</title>
+    <h1 class="project-name">Probing the Feasibility of Multilingual Speaker Anonymization</h1>
+</header>
+
+<main id="content" class="main-content" role="main">
+        <!-- Explanation -->
+
+    <br><br>
+    
+        <h3><b>Baseline</b> - No text embeddings used</h3>
+        <p>The baseline TTS system generates speech directly from the given text input, without any additional conditioning prompts. The only way the prosody could be influenced here is the text that is to be read itself. This approach serves as a foundation for comparison.</p>
+        
+    <br><br>
+
+    <!-- Table -->
+    <h3>English</h3>
+    <table>
+        <tr>
+            <th>Dataset</th>
+            <th>Original</th>
+            <th>Anonymized</th>
+        </tr>
+        <!-- Add more rows with data as needed -->
+        <tr>
+            <td>LibriSpeech</td>
+            <td>
+              <audio controls>
+                  <source src="resources\en_libri_original.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+          </td>
+          <td>
+            <audio controls>
+                <source src="resources\en_libri_anon.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        </tr>
+        <tr>
+            <td>VCTK</td>
+            <td>
+              <audio controls>
+                  <source src="resources\en_vctk_original.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+          </td>
+          <td>
+            <audio controls>
+                <source src="resources\en_vctk_anon.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        </tr>
+        <tr>
+            <td>CommonVoice</td>
+            <td>
+              <audio controls>
+                  <source src="resources\en_cv_original.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+          </td>
+          <td>
+            <audio controls>
+                <source src="resources\en_cv_anon.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Table -->
+    <h3>Using a different Prompt</h3>
+    
+</main>
+</body>
+</html>
